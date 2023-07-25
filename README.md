@@ -39,6 +39,14 @@ sudo apt install upx
 ```
 
 ### Run Platypus from source code
+For `Centos 7`, use
+```
+yum install -y make curl upx
+sed -i 's/apt/yum/g' Makefile
+make install_dependency
+make release
+```
+
 
 ```bash
 git clone https://github.com/WangYihang/Platypus
