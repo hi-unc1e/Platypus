@@ -47,6 +47,10 @@ make install_dependency
 make release
 ```
 
+For some regions
+```
+ git config --global url."https://ghproxy.com/github.com/".insteadOf "https://github.com/"
+```
 
 ```bash
 git clone https://github.com/WangYihang/Platypus
