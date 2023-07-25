@@ -5,7 +5,7 @@ build: build_platypus
 install_dependency:
 	sudo apt update
 	# Nodejs
-	node --version || (curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash && bash -c "source ${HOME}/.nvm/nvm.sh && nvm install 14.19.0 && npm install -g yarn")
+	node --version || (curl -o-  https://github.com/nvm-sh/nvm/raw/v0.39.1/install.sh | bash) && source ${HOME}/.nvm/nvm.sh && nvm install 14.19.0 && npm install -g yarn)
 	# Golang
 	axel --version || sudo apt install -y axel 
 	unar --version || sudo apt install -y unar
